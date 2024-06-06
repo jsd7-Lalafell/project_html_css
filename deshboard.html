@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#F2F5F8] w-screen h-screen">
+  <header class="z-50 shadow-md bg-white fixed top-0 w-full"> <!--add shadow-->
+    <nav class="flex justify-between h-[100px] items-center mx-6 ">
+        <a href="#" class="text-3xl md:text-4xl  font-bold ease-out duration-300 transform hover:scale-105 ml-4 md:ml-0">Lalafell Keyboard</a>
+        <div class="md:flex items-center mr-6 hidden">
+            <img class="w-8 h-8 mr-6 " src="./assets/Navigation-icon-lucide-bell.svg">
+            <div class="avatar online mr-6">
+                <div class="w-12 rounded-full ">
+                  <img class="rounded-full" src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                </div>
+            </div>
+            <span class="text-xl font-medium">Admin</span>
+        </div>
+    </nav>
+  </header>
+  <main>
+    <section class="flex mt-24">
+      <aside class="w-[21%] bg-white hidden md:block">
+          <div id="order" class="my-8 mx-6">
+              <div class="flex">
+                  <img src="./assets/aside-bar-icon-list.svg" class="h-6 w-6">
+                  <h3 class="px-2 mb-1 text-xl font-semibold">Order</h3>
+              </div>
+              <ul class="px-8">
+                  <li class="mb-1 md:text-lg">My Orders</li>
+                  <li class="mb-1 md:text-lg">Mass Ship</li>
+                  <li class="mb-1 md:text-lg">Cancellation</li>
+                  <li class="mb-1 md:text-lg">Return/Refund</li>
+                  <li class="mb-1 md:text-lg">Shipping Setting</li>
+              </ul>
+          </div>
+          <div id="product" class="my-6 mx-6">
+              <div class="flex">
+                  <img src="./assets/aside-bar-icon-product.svg" class="h-6 w-6">
+                  <h3 class="px-2 mb-1 text-xl font-semibold">My Products</h3>
+              </div>
+              <ul class="px-8">
+                  <li class="mb-1 text-lg">My Product</li>
+                  <li class="mb-1 text-lg">Add New Product</li>
+              </ul>
+          </div>
+      </aside>
+      <div class="w-full md:max-w-screen-lg">
+        <div class="my-8 mx-8 md:mr-0">
+            <h3 class="text-2xl font-semibold">Overviwe</h3>
+        </div>
+        <div class="my-6 mx-8 md:mr-0">
+            <div>
+                <div class="my-6 flex justify-between gap-4 overflow-x-auto md:max-w-screen-lg md:m-auto">
+                    <div class="border-2 rounded-xl shadow-md bg-white border-t-blue-400 border-t-4 py-4 min-w-[235px] h-[130px]">
+                        <h4 class="mx-6 text-xl font-semibold ">Revene</h4>
+                        <span class="mx-6 text-2xl font-semibold">$0</span>
+                        <span class="mx-6 text-xl text-green-500">+0%</span>
+                        <p class="mx-6 text-lg">month over mouth</p>
+                    </div>
+                    <div class="border-2 rounded-xl shadow-md bg-white border-t-orange-500 border-t-4  py-4 min-w-[235px] h-[130px]">
+                        <h4 class="mx-6 text-xl font-semibold ">Seles</h4>
+                        <span class="mx-6 text-2xl font-semibold">$0</span>
+                        <span class="mx-6 text-xl text-green-500">+0%</span>
+                        <p class="mx-6 text-lg">month over mouth</p>
+                    </div>
+                    <div class="border-2 rounded-xl shadow-md bg-white border-t-green-500 border-t-4 py-4 min-w-[235px] h-[130px]">
+                        <h4 class="mx-6 text-xl font-semibold ">Orders</h4>
+                        <span class="mx-6 text-2xl font-semibold">0</span>
+                        <span class="mx-6 text-xl text-green-500">+0%</span>
+                        <p class="mx-6 text-lg">month over mouth</p>
+                    </div>
+                    <div class="border-2 rounded-xl shadow-md bg-white border-t-yellow-500 border-t-4 py-4 min-w-[235px] h-[130px]">
+                        <h4 class="mx-6 text-xl font-semibold ">Customers</h4>
+                        <span class="mx-6 text-2xl font-semibold">0</span>
+                        <span class="mx-6 text-xl text-green-500">+0%</span>
+                        <p class="mx-6 text-lg">month over mouth</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hidden md:block mx-8 md:mr-0">
+            <h2 class="text-xl font-semibold">Trend Chart of Each Metric</h2>
+            <p class="text-lg">An overview of the shop data for the confirmed order dimension</p>
+        </div>
+        <div class=" bg-white mx-8 md:mr-0 rounded-lg shadow-sm ">
+            <div id="chart" class="mx-2 lg:mr-0">
+                <div class="flex justify-between mx-6 my-6 items-center">
+                    <h2 class="text-xl font-semibold">Sales</h2>
+                    <div class="bg-[#F2F5F8] my-6 rounded-lg">
+                        <button class="rounded-lg text-lg font-semibold hover:bg-black hover:text-white py-2 px-2 md:px-4">Day</button>
+                        <button class="rounded-lg text-lg font-semibold hover:bg-black hover:text-white py-2 px-2 md:px-4">Month</button>
+                        <button class="rounded-lg text-lg font-semibold hover:bg-black hover:text-white py-2 px-2 md:px-4">Year</button>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <div class="mx-8 md:mr-0">
+            <div class="grid grid-cols-1 md:grid-cols-3 md:gap-4 ">
+                <div id="bar" class="bg-white rounded-lg shadow-sm col-span-2">
+                    <div>
+                        <div class="flex justify-between mx-6 items-center ">
+                            <div>
+                                <h2 class="text-xl mt-8 font-semibold">Profit this week</h2>
+                            </div>
+                            <div class="bg-[#F2F5F8] mt-6 rounded-lg">
+                                <button class=" rounded-lg text-lg font-semibold hover:bg-black hover:text-white py-2 px-2 md:px-4">Day</button>
+                                <button class="rounded-lg text-lg font-semibold hover:bg-black hover:text-white py-2 px-2 md:px-4">Month</button>
+                                <button class="rounded-lg text-lg font-semibold hover:bg-black hover:text-white py-2 px-2 md:px-4">Year</button>
+                            </div>
+                        </div>
+                        <div class="mx-6">
+                            <span class="mt-6 text-2xl font-semibold">$0.0K</span>
+                            <span class="text-lg text-green-500">+0.00%</span>
+                            <p class="mt-2 text-lg ">Total income in this year</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="chat" class="bg-white rounded-lg shadow-sm mt-6 md:mt-0">
+                    <div class="flex mx-6">
+                        <img class="mx-2 w-6 h-6 mt-8" src="./assets/Dashboard-icon-chat.svg" alt="Chat">
+                        <h2 class="text-xl mt-8 font-semibold">Chat</h2>
+                    </div>
+                    <div class="flex justify-center my-6">
+                        <button class="border border-black py-2 px-4 rounded-md text-lg font-semibold hover:bg-black hover:text-white">Go to Chat</button>
+                    </div>
+                </div>
+            </div>
+            <form class=" bg-white md:mr-0 rounded-lg shadow-sm my-6">
+                <div class="flex justify-between">
+                    <h class="m-8 text-xl font-semibold">Recent Orders</h>
+                    <button class="flex justify-end items-center m-8  border border-gray-400 hover:border-gray-600">
+                        <h2 class="py-2 ml-4 text-base text-gray-700 hover:text-black">Export Data </h2>
+                        <img class="py-2 mx-4 w-6 " src="./assets/Dashboard-icon-export.svg" alt="Export"> 
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+  </main>
+
+
+
+  
+  
+</body>
+</html>
