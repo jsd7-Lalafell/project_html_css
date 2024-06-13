@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lalafell Keyboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="md:max-w-5xl mx-auto">
+    <header>
+      <!--Nav Top -->
+      <nav
+      class="flex items-center h-[100px]  mx-auto px-4 shadow-md md:hidden fixed top-0 left-0 right-0 bg-white "
+      >
+        <a href="#" class="absolute left-4 md:hidden">
+          <img
+            class="h-5 w-5"
+            src="assets/Navigation-icon-back.png"
+            alt="Back"
+          />
+        </a>
+        <div class="flex-grow text-center">
+          <a
+            href="#"
+            class="text-3xl font-bold ease-out duration-300 transform hover:scale-105 md:hidden"
+          >
+            Credit/Debit Card
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="pt-[100px]">
+      <div class="flex justify-center">
+        <button
+          type="button"
+          class="px-4 py-2 mt-8 mb-4 bg-black hover:bg-gray-500 text-white rounded md:hidden"
+        >
+          + Add
+        </button>
+      </div>
+      <div class="flex justify-center md:hidden">
+        <div
+          class="bg-white border border-gray-300 rounded-lg p-4 m-4 w-full max-w-[500px] flex-col items-center justify-between"
+        >
+          <div class="mb-5">
+            <button class="underline float-right text-sm">[Delete]</button>
+          </div>
+          <div class="flex items-center">
+            <img
+              src="assets/LogoCredit Card/Mastercard.jpg"
+              alt="Card Logo"
+              class="max-w-32"
+            />
+            <p class="text-lg ml-auto">**** **** **** 3456</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+    <nav
+        class="bg-white shadow-t md:hidden fixed bottom-0 left-0 right-0 border-t border-gray-300 shadow-lg"
+      >
+        <ul class="flex justify-around py-4">
+          <li>
+            <a href="#"
+              ><img
+                class="h-7 w-7"
+                src="assets/Navigation-icon-home.svg"
+                alt="Home"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                class="h-7 w-7"
+                src="assets/Navigation-icon-search.svg"
+                alt="Search"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                class="h-7 w-7"
+                src="assets/Navigation-icon-shopping-cart.svg"
+                alt="Cart"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                class="h-7 w-7"
+                src="assets/Navigation-icon-lucide-bell.svg"
+                alt="Notifications"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                class="h-7 w-7"
+                src="assets/Navigation-icon-manu-list.svg"
+                alt="Menu"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+  </body>
+</html>

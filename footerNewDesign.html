@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>lalafel</title>
-    <title>Lalafell Keyboard</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lalafell Keyboard</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-QrE/HtDQ6w5Il5iQYjqTpqF8Orv2J+X7u8z5dpA3gS0uE09zhm3+21bDZV/hpFeXkuY4xRv6kw41txR5nCtZQA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      </head>
+      
   <body>
     <h1></h1>
   <body class="bg-gray-100 flex flex-col min-h-screen">
@@ -16,31 +17,48 @@
     </div>
 
     <!-- Footer -->
-    <hr class="border-gray-300 container mx-auto max-w-5xl" />
-    <footer
-      class="container mx-auto max-w-5xl flex items-center justify-between text-sm py-4"
-    >
-      <p class="flex-none text-gray-700 text-l">Lalafell Keyboard</p>
-      <nav class="flex flex-grow justify-end">
-        <ul class="flex flex-col text-gray-700 text-m">
-          <li class="mb-2">
-            <p class="font-bold">Email</p>
-            <a href="mailto:lalafel.keyboard@gmail.com" class="hover:underline"
-              >lalafel.keyboard@gmail.com</a
-            >
-          </li>
-          <li>
-            <p class="font-bold">Tel.</p>
-            <a href="tel:0123133331" class="hover:underline">0123133331</a>
-          </li>
-        </ul>
-      </nav>
-    </footer>
+
+    <footer class=" border-t-2 border-gray-200 py-12 lg:py-16 xl:py-20 container mx-auto max-w-5xl">
+      <div class="container mx-auto px-4 lg:px-8 xl:px-12">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <!-- ส่วนเกี่ยวกับเรา -->
+              <div class="text-center md:text-left">
+                  <h2 class="text-xl md:text-2xl lg:text-3xl font-semibold text-gray-800 mb-4">About Us</h2>
+                  <p class="text-sm lg:text-base text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis, massa eget condimentum finibus, nulla mi vehicula quam, non hendrerit nulla magna id lectus.</p>
+              </div>
+              <!-- ลิงก์ -->
+              <div class="text-center md:text-left">
+                  <h2 class="text-xl md:text-2xl lg:text-3xl font-semibold text-gray-800 mb-4">Quick Links</h2>
+                  <ul class="text-sm lg:text-base text-gray-600">
+                      <li class="mb-2"><a href="#" class="hover:text-gray-800">Home</a></li>
+                      <li class="mb-2"><a href="#" class="hover:text-gray-800">Shop</a></li>
+                      <li class="mb-2"><a href="#" class="hover:text-gray-800">About</a></li>
+                      <li><a href="#" class="hover:text-gray-800">Contact</a></li>
+                  </ul>
+              </div>
+              <!-- ติดตามเรา -->
+              <div class="text-center md:text-left">
+                  <h2 class="text-xl md:text-2xl lg:text-3xl font-semibold text-gray-800 mb-4">Follow Us</h2>
+                  <div class="flex justify-center md:justify-start">
+                      <a href="#" class="text-gray-600 hover:text-gray-800 mr-4"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#" class="text-gray-600 hover:text-gray-800 mr-4"><i class="fab fa-twitter"></i></a>
+                      <a href="#" class="text-gray-600 hover:text-gray-800"><i class="fab fa-instagram"></i></a>
+                  </div>
+              </div>
+          </div>
+          <!-- สิทธิ์ -->
+          <div class="text-center mt-8">
+              <p class="text-sm lg:text-base text-gray-600">&copy; 2024 Lelafell Keyboard. All rights reserved.</p>
+          </div>
+      </div>
+  </footer>
+  
+      
 
     <!-- ContactBtn -->
     <div
       id="contactBtn"
-      class="fixed bottom-5 right-5 w-12 h-12 bg-black text-white rounded-full flex items-center justify-center cursor-pointer shadow-md hover:bg-gray-500"
+      class="fixed bottom-5 right-5 w-12 h-12 bg-black opacity-50 md:opacity-100 text-white rounded-full flex items-center justify-center cursor-pointer shadow-md hover:bg-gray-500"
     >
       <span>💬</span>
     </div>
